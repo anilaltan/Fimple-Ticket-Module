@@ -52,7 +52,7 @@ const SampleList = (props) => {
           };
           setDataSource([updatedObject]);
         } else {
-          enqueueSuccess(translate('Error occured while fetching ticket'));
+          enqueueSuccess(translate('Error occurred while fetching ticket'));
         }
       });
     } else {
@@ -69,7 +69,7 @@ const SampleList = (props) => {
           }));
           setDataSource(updatedData);
         } else {
-          enqueueSuccess(translate('Error occured while fetching tickets'));
+          enqueueSuccess(translate('Error occurred while fetching tickets'));
         }
       });
     }
