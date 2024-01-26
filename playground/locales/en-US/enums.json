@@ -1,0 +1,26 @@
+{
+  "CategoryType": {
+    "Name": {
+      "Category 1": "Category 1",
+      "Category 2": "Category 2",
+      "Category 3": "Category 3",
+      "Category 4": "Category 4"
+    }
+  },
+  "SampleEnum": {
+    "Name": {
+      "Code 0": "Code 0",
+      "Code 1": "Code 1",
+      "Code 2": "Code 2",
+      "Code 3": "Code 3",
+      "Code 4": "Code 4"
+    }
+  },
+  "StatusType": {
+    "Name": {
+      "Pending": "Pending",
+      "Processing": "Processing",
+      "Completed": "Completed"
+    }
+  }
+}

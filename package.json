@@ -1,0 +1,42 @@
+{
+  "name": "fi.web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "app",
+    "playground"
+  ],
+  "scripts": {
+    "start": "yarn start:remote",
+    "start:app": "cross-env WEB_DOMAIN=https://dev.fimple.co.uk yarn --cwd .config/app run start:remote",
+    "start:dev": "cross-env WEB_DOMAIN=https://dev.fimple.co.uk lerna run start --stream --concurrency=30 --loglevel=error",
+    "start:test": "cross-env WEB_DOMAIN=https://test.fimple.co.uk lerna run start --stream --concurrency=30 --loglevel=error",
+    "start:remote": "cross-env WEB_DOMAIN=https://sandbox.fimple.co.uk lerna run start:remote --stream --concurrency=30 --loglevel=error",
+    "start:remote-test": "cross-env WEB_DOMAIN=https://test.fimple.co.uk lerna run start:remote --stream --concurrency=30 --loglevel=error",
+    "build": "cross-env COMMIT_ID=\"${COMMIT_ID}\" lerna run build --stream",
+    "build:release": "lerna run build:release --stream --concurrency=1",
+    "build-parallel": "lerna run build --stream",
+    "build-new": "cross-env CURRENT_VERSION=\"${CURRENT_VERSION}\" COMMIT_ID=\"${COMMIT_ID}\" lerna run build --stream --concurrency=1",
+    "clean:dist": "lerna run clean --stream",
+    "clean:node": "rm -rf node_modules && lerna run clean:node --stream",
+    "generate-uiKey": "node -e 'require(\"./.config/utils\").generateUIKey()'",
+    "generate-module": "node ./.config/cli/index.js generate-module",
+    "update-typings": "node ./.config/cli/index.js update-typings"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "chalk": "^4.1.2",
+    "commander": "^10.0.0",
+    "lerna": "^6.4.1",
+    "prettier": "^2.8.3",
+    "uuid": "^8.3.2"
+  },
+  "dependencies": {},
+  "bin": {
+    "fimple": "./.config/cli/index.js"
+  }
+}

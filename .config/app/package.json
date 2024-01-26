@@ -1,0 +1,44 @@
+{
+  "name": "app",
+  "fi-metadata": {
+    "moduleUniqueName": "app"
+  },
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start:remote": "cross-env LOCAL_ENTRIES=app,playground webpack serve --config config/webpack.local.js",
+    "build": "echo build",
+    "build:release": "echo build:release",
+    "clean": "rm -rf dist",
+    "clean:node": "rm -rf node_modules"
+  },
+  "dependencies": {
+    "@svgr/webpack": "^6.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "sass": "^1.49.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.1",
+    "@svgr/webpack": "^6.2.1",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.0.0",
+    "dotenv-webpack": "^8.0.1",
+    "external-remotes-plugin": "^1.0.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.5.0",
+    "raw-loader": "^4.0.2",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.1.0",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.2.0"
+  }
+}

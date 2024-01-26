@@ -1,0 +1,19 @@
+{
+  "CategoryType": {
+    "Name": {
+      "Category 1": "فئة 1",
+      "Category 2": "فئة 2",
+      "Category 3": "فئة 3",
+      "Category 4": "فئة 4"
+    }
+  },
+  "SampleEnum": {
+    "Name": {
+      "Code 0": "الشفرة 0",
+      "Code 1": "الشفرة 1",
+      "Code 2": "الشفرة 2",
+      "Code 3": "الشفرة 3",
+      "Code 4": "الشفرة 4"
+    }
+  }
+}

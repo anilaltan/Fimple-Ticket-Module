@@ -1,0 +1,26 @@
+{
+  "CategoryType": {
+    "Name": {
+      "Category 1": "Kategori 1",
+      "Category 2": "Kategori 2",
+      "Category 3": "Kategori 3",
+      "Category 4": "Kategori 4"
+    }
+  },
+  "SampleEnum": {
+    "Name": {
+      "Code 0": "Kod 0",
+      "Code 1": "Kod 1",
+      "Code 2": "Kod 2",
+      "Code 3": "Kod 3",
+      "Code 4": "Kod 4"
+    }
+  },
+  "StatusType": {
+    "Name": {
+      "Pending": "Bekleniyor",
+      "Processing": "İşleniyor",
+      "Completed": "Tamamlandı"
+    }
+  }
+}
