@@ -94,7 +94,7 @@ const SampleList = (props) => {
       { name: 'name', header: translate('Name'), defaultFlex: 1 },
       { name: 'status', header: translate('Status'), defaultFlex: 1 },
       { name: 'createdAt', header: translate('Creation date'), defaultFlex: 1 },
-      { name: 'updatedAt', header: translate('Updated Date'), defaultFlex: 1 },
+      { name: 'updatedAt', header: translate('Updated date'), defaultFlex: 1 },
       { name: 'definition', header: translate('Reason for ticket'), defaultFlex: 2 },
     ];
   }, []);
